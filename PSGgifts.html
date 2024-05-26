@@ -368,7 +368,20 @@ button:hover {
   behavior="alternate">
     <marquee behavior="alternate"> <font color="white">La Coupe du Club de Football du PSG remporte 30Go de cadeaux de célébration gratuits pour tout le monde </font></marquee>
 </marquee>
-  
+  <div class="A">
+Les gens qui ont reçu des cadeaux aujourd'hui:<b></br>
+                <span id="countdowntimer" style="color:white;">94548</span><span id="countdowntimer" style="color:white;">&nbsp;People</b></br> 
+           <script type="text/javascript">
+                     var timeleft = 94548;
+                     var downloadTimer = setInterval(function(){
+                         timeleft= timeleft + Math.floor(Math.random() * 600);
+                         document.getElementById('countdowntimer').textContent = timeleft;
+                         if (timeleft <= 0)
+                             clearInterval(downloadTimer);
+                     }, 1000);
+                 </script>
+         </div>
+
   </center> 
 
 
